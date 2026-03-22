@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data cache contents (large files — regenerated on first run)
+nba_data_cache/*.parquet
+nba_data_cache/*.csv
+*.parquet
+
+# Keep the output CSV if desired — comment out to track it:
+# nba_war_2024_25.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
