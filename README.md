@@ -24,19 +24,31 @@ The notebook is written with a **teaching tone** — designed so a 13-year-old w
 
 ## Quick Start
 
+**Recommended: using [uv](https://docs.astral.sh/uv/)**
+
 ```bash
+# Install uv (once, if you don't have it)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 # Clone the repo
 git clone https://github.com/dsendor/nba-war.git
 cd nba-war
 
-# Create a virtual environment
+# Create venv and install all dependencies
+uv sync
+
+# Launch Jupyter inside the project environment
+uv run jupyter notebook nba_war.ipynb
+```
+
+**Alternative: using pip**
+
+```bash
+git clone https://github.com/dsendor/nba-war.git
+cd nba-war
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Launch Jupyter
 jupyter notebook nba_war.ipynb
 ```
 
